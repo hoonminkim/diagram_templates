@@ -1,0 +1,270 @@
+%% title Mandarart (Sierpinski Carpet) Diagram for Mermaid
+%% author
+%% date 2024-08-15
+%% note 
+%% 
+%% This mardarart diagram is implemented using the block diagram feature of Mermaid.
+%% At the moment of the creation on this script, the block diagram feature of Mermaid is in beta release.
+%% A little bit of modification may be required for compaitibility in the future.
+%% 
+%% <legend>
+%% a: top-left
+%% b: top-center
+%% c: top-right
+%% d: middle-left
+%% e: middle-center
+%% f: middle-right
+%% g: bottom-left
+%% h: bottom-center
+%% i: bottom-right
+%% 
+%% Some of the blocks have empty lines.
+%% Those lines are spaceholders to walkaround the Mermaid's block height bug.
+%% 
+
+block-beta
+    columns 3
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% a (top-left)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    block
+    columns 3
+        aa["-"]
+        ab["-"]
+        ac["-"]
+        ad["-"]
+        ae(["top-left"])
+        af["-"]
+        ag["-"]
+        ah["-"]
+        ai["-"]
+    end
+
+    ae --> aa
+    ae --> ab
+    ae --> ac
+    ae --> ad
+    ae --> af
+    ae --> ag
+    ae --> ah
+    ae --> ai
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% b (top-center)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    block
+    columns 3
+        ba["-"]
+        bb["-"]
+        bc["-"]
+        bd["-"]
+        be(["top-center"])
+        bf["-"]
+        bg["-"]
+        bh["-"]
+        bi["-"]
+    end
+
+    be --> ba
+    be --> bb
+    be --> bc
+    be --> bd
+    be --> bf
+    be --> bg
+    be --> bh
+    be --> bi
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% c (top-right)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    block
+    columns 3
+        ca["-"]
+        cb["-"]
+        cc["-"]
+        cd["-"]
+        ce(["top-right"])
+        cf["-"]
+        cg["-"]
+        ch["-"]
+        ci["-"]
+    end
+
+    ce --> ca
+    ce --> cb
+    ce --> cc
+    ce --> cd
+    ce --> cf
+    ce --> cg
+    ce --> ch
+    ce --> ci
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% d (middle-left)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    block
+    columns 3
+        da["-"]
+        db["-"]
+        dc["-"]
+        dd["-"]
+        de(["middle-left"])
+        df["-"]
+        dg["-"]
+        dh["-"]
+        di["-"]
+    end
+
+    de --> da
+    de --> db
+    de --> dc
+    de --> dd
+    de --> df
+    de --> dg
+    de --> dh
+    de --> di
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% e (middle-center)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    block
+    columns 3
+        ea["-"]
+        eb["-"]
+        ec["-"]
+        ed["-"]
+        ee(["middle-center"])
+        ef["-"]
+        eg["-"]
+        eh["-"]
+        ei["-"]
+    end
+
+    ee --> ea
+    ee --> eb
+    ee --> ec
+    ee --> ed
+    ee --> ef
+    ee --> eg
+    ee --> eh
+    ee --> ei
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% f (middle-right)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    block
+    columns 3
+        fa["-"]
+        fb["-"]
+        fc["-"]
+        fd["-"]
+        fe(["middle-right"])
+        ff["-"]
+        fg["-"]
+        fh["-"]
+        fi["-"]
+    end
+
+    fe --> fa
+    fe --> fb
+    fe --> fc
+    fe --> fd
+    fe --> ff
+    fe --> fg
+    fe --> fh
+    fe --> fi
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% g (botton-left)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    block
+    columns 3
+        ga["-"]
+        gb["-"]
+        gc["-"]
+        gd["-"]
+        ge(["botton-left"])
+        gf["-"]
+        gg["-"]
+        gh["-"]
+        gi["-"]
+    end
+    
+    ge --> ga
+    ge --> gb
+    ge --> gc
+    ge --> gd
+    ge --> gf
+    ge --> gg
+    ge --> gh
+    ge --> gi
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% h (bottom-center)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    block
+    columns 3
+        ha["-"]
+        hb["-"]
+        hc["-"]
+        hd["-"]
+        he(["bottom-center"])
+        hf["-"]
+        hg["-"]
+        hh["-"]
+        hi["-"]
+    end
+
+    he --> ha
+    he --> hb
+    he --> hc
+    he --> hd
+    he --> hf
+    he --> hg
+    he --> hh
+    he --> hi
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% i (bottom-right)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    block
+    columns 3
+        ia["-"]
+        ib["-"]
+        ic["-"]
+        id["-"]
+        ie(["bottom-right"])
+        if["-"]
+        ig["-"]
+        ih["-"]
+        ii["-"]
+    end
+
+    ie --> ia
+    ie --> ib
+    ie --> ic
+    ie --> id
+    ie --> if
+    ie --> ig
+    ie --> ih
+    ie --> ii
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% top-level connections
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    ea --> ai
+    eb --> bh
+    ec --> cg
+    ed --> df
+    ef --> fd
+    eg --> gc
+    eh --> hb
+    ei --> ia
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %% style
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    classDef center fill:#444
+    class ae,be,ce,de,ee,fe,ge,he,ie center
