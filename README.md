@@ -1,4 +1,4 @@
-# diagram_templates
+# Diagram Templates
 ## Mermaid
 ### Mandarart Diagram
 This diagram is drawn with the block diagram feature of Mermaid.
